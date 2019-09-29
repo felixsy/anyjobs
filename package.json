@@ -4,7 +4,7 @@
   "description": "Nigerian best job portal for all industry",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [
     "anyjobs",
