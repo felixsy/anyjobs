@@ -1,0 +1,23 @@
+<section class="login bg-light">
+    <div class="row mt-5">
+        <div class="col-sm-5 mx-auto my-3">
+            <div class="card card-body">
+                <h2 class="text-light-green">Employer Login</h2>
+                <form action="/employer/login" method="POST">
+                    {{>_error_msg}}
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="form-control" placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" class="form-control" placeholder="Enter your password">
+                    </div>
+                    <a href="/employer/forgotpassword">Forgot Password</a>
+                    <input type="submit" class="btn bg-light-green text-white btn-lg float-right" value="Login">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

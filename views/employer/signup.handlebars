@@ -1,0 +1,66 @@
+<section class="signup container py-5">
+    <div class="row">
+        <div class="col-sm-8 mx-auto">
+            <div class="card card-body">
+                <h2 class="text-light-green">Employer's Signup</h2>
+                {{>_error_msg}}
+                <form action="/employer/signup" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="companyname">Company's Name:</label>
+                        <input type="text" class="form-control" name="company" value="{{company}}"
+                            placeholder="Enter your companies name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="companyname">Email:</label>
+                        <input type="email" class="form-control" name="email" value="{{email}}"
+                            placeholder="Enter companies email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="companyname">Password:</label>
+                        <input type="password" class="form-control" name="password" value="{{password}}"
+                            placeholder="Enter password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="companyname">Confirm Password:</label>
+                        <input type="password" class="form-control" value="{{confirmpassword}}" name="confirmpassword"
+                            placeholder="Confirm Password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="companyname">Phone:</label>
+                        <input type="tel" class="form-control" name="phone" value="{{phone}}"
+                            placeholder="Enter companies contact phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="companyname">Address:</label>
+                        <textarea name="address" class="form-control" cols="30" rows="3">{{address}}</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="companyname">LGA:</label>
+                        <select name="lga" class="form-control" name="lga">
+                            <option value="Mushin">Mushin</option>
+                            <option value="Ikeja">Ikeja</option>
+                            <option value="Surulere">Surulere</option>
+                            <option value="Lagos Island">Lagos Island</option>
+                            <option value="Eti Osa">Eti Osa</option>
+                            <option value="Victoria Island">Victoria Island</option>
+                            <option value="Lekki">Lekki</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="companyname">State:</label>
+                        <select name="state" class="form-control" name="lga">
+                            <option value="Lagos State">Lagos State</option>
+                            <option value="Abuja">Abuja</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="logo">Company's Logo</label>
+                        <input type="file" name="logo" class="form-control">
+                    </div>
+                    <input type="submit" value="Signup" class="btn bg-light-green text-white btn-lg float-right">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
